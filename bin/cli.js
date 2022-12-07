@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import minimist from "minimist";
 
 import { roll } from "../lib/roll.js";
@@ -22,4 +24,4 @@ if (rolls == undefined) {
     var rolls = args.rolls;
 }
 
-console.log(JSOM.stringify(roll(sides, dice, rolls)));
+console.log(JSON.stringify(roll(sides,dice,rolls)));
